@@ -1,0 +1,52 @@
+﻿@model IEnumerable<MyReloadedOfficeApp.Models.DepartmentsModel>
+
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Index</h2>
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.IdDepartment)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Name)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.MaximumSeatsPerDepartment)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.DepartmentDescription)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.IdDepartment)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Name)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.MaximumSeatsPerDepartment)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.DepartmentDescription)
+        </td>
+        <td>
+            @Html.ActionLink("Edit", "Edit", new { id=item.IdDepartment }) |
+            @Html.ActionLink("Details", "Details", new { id = item.IdDepartment }) |
+            @Html.ActionLink("Delete", "Delete", new { id = item.IdDepartment })
+        </td>
+    </tr>
+}
+
+</table>

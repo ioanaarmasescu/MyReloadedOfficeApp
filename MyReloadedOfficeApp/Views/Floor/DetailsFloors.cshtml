@@ -1,0 +1,67 @@
+﻿@model MyReloadedOfficeApp.Models.FloorsModel
+
+@{
+    ViewBag.Title = "DetailsFloors";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>DetailsFloors</h2>
+
+<div>
+    <h4>FloorsModel</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.IdFloor)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.IdFloor)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Name)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Name)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.IdDepartment)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.IdDepartment)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.IdBuilding)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.IdBuilding)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.BookableSeats)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.BookableSeats)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.FloorDescription)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.FloorDescription)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new {  id = Model.IdFloor }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

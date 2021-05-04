@@ -1,0 +1,99 @@
+﻿@model IEnumerable<MyReloadedOfficeApp.Models.BookingsModel>
+
+@{
+    ViewBag.Title = "IndexFilterErrorBooking";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+
+    <h2>IndexFilterErrorBooking</h2>
+@if (ViewBag.Message != null)
+{
+    <script type="text/javascript">
+
+            window.onload = function () {
+                alert("@ViewBag.Message");
+            };
+    </script>
+
+}
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.IdBooking)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.BookingValidFrom)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.BookingValidTo)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.BookingTimeStamp)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.BookedSeats)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.IdFloor)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.IdBuilding)
+        </th>
+        <th>
+            @*Html.DisplayNameFor(model => model.UserName)*@
+        </th>
+        <th>
+            @*Html.DisplayNameFor(model => model.UserRole)*@
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.UserDepartment)
+        </th>
+        <th></th>
+    </tr>
+
+    @foreach (var item in Model)
+    {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.IdBooking)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.BookingValidFrom)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.BookingValidTo)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.BookingTimeStamp)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.BookedSeats)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.IdFloor)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.IdBuilding)
+            </td>
+            <td>
+                @*Html.DisplayFor(modelItem => item.UserName)*@
+            </td>
+            <td>
+                @*Html.DisplayFor(modelItem => item.UserRole)*@
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.UserDepartment)
+            </td>
+            <td>
+                @Html.ActionLink("Edit", "Edit", new { /* id=item.PrimaryKey */ }) |
+                @Html.ActionLink("Details", "Details", new { /* id=item.PrimaryKey */ }) |
+                @Html.ActionLink("Delete", "Delete", new { /* id=item.PrimaryKey */ })
+            </td>
+        </tr>
+    }
+
+</table>

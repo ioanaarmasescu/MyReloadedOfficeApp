@@ -1,0 +1,51 @@
+﻿@model MyReloadedOfficeApp.Models.UsersClustersModel
+
+@{
+    ViewBag.Title = "DetailsUserRoles";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>DetailsUserRoles</h2>
+
+<div>
+    <h4>UsersClustersModel</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.Name)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Name)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.IdDepartment)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.IdDepartment)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.IdUserType)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.IdUserType)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Discriminator)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Discriminator)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.Id }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

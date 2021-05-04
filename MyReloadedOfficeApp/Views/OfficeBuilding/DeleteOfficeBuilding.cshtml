@@ -1,0 +1,92 @@
+﻿@model MyReloadedOfficeApp.Models.OfficeBuildingsModel
+
+@{
+    ViewBag.Title = "DeleteOfficeBuilding";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>DeleteOfficeBuilding</h2>
+
+<h3>Are you sure you want to delete this?</h3>
+<div>
+    <h4>OfficeBuildingsModel</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.IdBuilding)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.IdBuilding)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Name)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Name)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.StreetHouseNumber)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.StreetHouseNumber)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.City)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.City)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.PostalCode)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.PostalCode)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.RentalContract)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.RentalContract)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.BuildingDescription)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.BuildingDescription)
+        </dd>
+
+    </dl>
+
+    @using (Html.BeginForm()) {
+        @Html.AntiForgeryToken()
+
+<div class="form-actions no-color">
+    <input type="submit" value="Delete" class="btn btn-default" /> |
+    @if (ViewBag.Message_Delete != null)
+    {
+        <script type="text/javascript">
+
+            window.onload = function () {
+                alert("@ViewBag.Message_Delete");
+            };
+        </script>
+
+    }
+
+    @Html.ActionLink("Back to List", "Index")
+</div>
+    }
+</div>

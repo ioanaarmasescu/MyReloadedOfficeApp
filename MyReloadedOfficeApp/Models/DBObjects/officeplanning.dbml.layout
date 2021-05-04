@@ -1,0 +1,128 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ordesignerObjectsDiagram dslVersion="1.0.0.0" absoluteBounds="0, 0, 26.75, 11.625" name="officeplanning">
+  <DataContextMoniker Name="/officeplanningDataContext" />
+  <nestedChildShapes>
+    <classShape Id="a9830156-90ea-4a12-98e7-815b84270b0c" absoluteBounds="24.5, 3, 2, 1.5785953776041666">
+      <DataClassMoniker Name="/officeplanningDataContext/__MigrationHistory" />
+      <nestedChildShapes>
+        <elementListCompartment Id="a9e110b1-28f4-406c-88f7-52c80e03f4c0" absoluteBounds="24.515, 3.4600000000000009, 1.9700000000000002, 1.0185953776041665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="a853558d-2ea6-41e1-976d-e5e2a87d1188" absoluteBounds="7.75, 8.625, 2, 1.1939925130208335">
+      <DataClassMoniker Name="/officeplanningDataContext/RawUserType" />
+      <nestedChildShapes>
+        <elementListCompartment Id="3757a792-48b6-4aee-b80a-f9374fa3382b" absoluteBounds="7.7650000000000006, 9.085, 1.9700000000000002, 0.63399251302083326" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="629674d2-d1da-4b7a-9fe0-c49ecbf5f6b1" absoluteBounds="5.25, 5.75, 2, 1.7708968098958344">
+      <DataClassMoniker Name="/officeplanningDataContext/AspNetRole" />
+      <nestedChildShapes>
+        <elementListCompartment Id="1a8f4cea-4111-4ef9-af67-62ef18ab6ccf" absoluteBounds="5.265, 6.2100000000000009, 1.9700000000000002, 1.2108968098958333" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="d111992d-3a6e-499f-81d2-e68fa6d36ac0" absoluteBounds="11.625, 9.75, 2, 1.5785953776041666">
+      <DataClassMoniker Name="/officeplanningDataContext/AspNetUserClaim" />
+      <nestedChildShapes>
+        <elementListCompartment Id="4c3ce8f2-3be8-4430-befe-46577249acd3" absoluteBounds="11.64, 10.21, 1.9700000000000002, 1.0185953776041665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="8a5d81e2-7681-4a09-8526-76fe0d435e1b" absoluteBounds="14.875, 6.5, 2, 1.3862939453124987">
+      <DataClassMoniker Name="/officeplanningDataContext/AspNetUserLogin" />
+      <nestedChildShapes>
+        <elementListCompartment Id="b03ea371-1e25-4d0e-a4d3-b2653b289a8a" absoluteBounds="14.89, 6.9600000000000009, 1.9700000000000002, 0.8262939453125" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="46b5bc86-a8e2-4309-8e59-55a3aa98867f" absoluteBounds="8.375, 6, 2, 1.1939925130208344">
+      <DataClassMoniker Name="/officeplanningDataContext/AspNetUserRole" />
+      <nestedChildShapes>
+        <elementListCompartment Id="52fe2854-8edb-4358-b50f-288e55736e82" absoluteBounds="8.39, 6.4600000000000009, 1.9700000000000002, 0.63399251302083326" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="d56d2343-61bd-4a36-a069-d1eab009f1b3" absoluteBounds="11.625, 5.75, 2, 3.1170068359374987">
+      <DataClassMoniker Name="/officeplanningDataContext/AspNetUser" />
+      <nestedChildShapes>
+        <elementListCompartment Id="6dcf8674-2048-4993-a1b1-7764806c58fd" absoluteBounds="11.64, 6.2100000000000009, 1.9700000000000002, 2.5570068359375" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="316ac6ac-06cd-448f-b88a-6122aecf7f0e" absoluteBounds="12.875, 0.5, 2, 2.7324039713541666">
+      <DataClassMoniker Name="/officeplanningDataContext/Booking" />
+      <nestedChildShapes>
+        <elementListCompartment Id="270b179d-4c59-412b-9e8f-b9986329f55a" absoluteBounds="12.89, 0.96, 1.9700000000000002, 2.1724039713541665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="89e49fb4-1148-48ee-9022-b4967da2a8dc" absoluteBounds="6.625, 0.5, 2, 1.5785953776041666">
+      <DataClassMoniker Name="/officeplanningDataContext/Department" />
+      <nestedChildShapes>
+        <elementListCompartment Id="0fd469ce-6f42-4ef5-9a04-16dd143a70ed" absoluteBounds="6.64, 0.96, 1.9700000000000002, 1.0185953776041665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="db12b96f-f51b-480f-9626-e22500bb4047" absoluteBounds="9.75, 0.5, 2, 1.9631982421875005">
+      <DataClassMoniker Name="/officeplanningDataContext/Floor" />
+      <nestedChildShapes>
+        <elementListCompartment Id="24f029a3-5183-47df-a9b0-179c5897b66c" absoluteBounds="9.765, 0.96, 1.9700000000000002, 1.4031982421875" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="a0dcda9c-5dc7-426a-8986-62abbf99e78f" absoluteBounds="9.75, 3.25, 2, 2.155499674479167">
+      <DataClassMoniker Name="/officeplanningDataContext/OfficeBuilding" />
+      <nestedChildShapes>
+        <elementListCompartment Id="41645a01-f463-4213-b6dc-a8c88672bae7" absoluteBounds="9.765, 3.71, 1.9700000000000002, 1.5954996744791665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <associationConnector edgePoints="[(7.25 : 6.59699625651042); (8.375 : 6.59699625651042)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/officeplanningDataContext/AspNetRole/AspNetRole_AspNetUserRole" />
+      <nodes>
+        <classShapeMoniker Id="629674d2-d1da-4b7a-9fe0-c49ecbf5f6b1" />
+        <classShapeMoniker Id="46b5bc86-a8e2-4309-8e59-55a3aa98867f" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(12.625 : 8.8670068359375); (12.625 : 9.75)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/officeplanningDataContext/AspNetUser/AspNetUser_AspNetUserClaim" />
+      <nodes>
+        <classShapeMoniker Id="d56d2343-61bd-4a36-a069-d1eab009f1b3" />
+        <classShapeMoniker Id="d111992d-3a6e-499f-81d2-e68fa6d36ac0" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(13.625 : 7.19314697265625); (14.875 : 7.19314697265625)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/officeplanningDataContext/AspNetUser/AspNetUser_AspNetUserLogin" />
+      <nodes>
+        <classShapeMoniker Id="d56d2343-61bd-4a36-a069-d1eab009f1b3" />
+        <classShapeMoniker Id="8a5d81e2-7681-4a09-8526-76fe0d435e1b" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(11.625 : 6.59699625651042); (10.375 : 6.59699625651042)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/officeplanningDataContext/AspNetUser/AspNetUser_AspNetUserRole" />
+      <nodes>
+        <classShapeMoniker Id="d56d2343-61bd-4a36-a069-d1eab009f1b3" />
+        <classShapeMoniker Id="46b5bc86-a8e2-4309-8e59-55a3aa98867f" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(11.75 : 1.48159912109375); (12.875 : 1.48159912109375)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/officeplanningDataContext/Floor/Floor_Booking" />
+      <nodes>
+        <classShapeMoniker Id="db12b96f-f51b-480f-9626-e22500bb4047" />
+        <classShapeMoniker Id="316ac6ac-06cd-448f-b88a-6122aecf7f0e" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(8.625 : 1.28929768880208); (9.75 : 1.28929768880208)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/officeplanningDataContext/Department/Department_Floor" />
+      <nodes>
+        <classShapeMoniker Id="89e49fb4-1148-48ee-9022-b4967da2a8dc" />
+        <classShapeMoniker Id="db12b96f-f51b-480f-9626-e22500bb4047" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(11.75 : 4.32774983723958); (13.875 : 4.32774983723958); (13.875 : 3.23240397135417)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/officeplanningDataContext/OfficeBuilding/OfficeBuilding_Booking" />
+      <nodes>
+        <classShapeMoniker Id="a0dcda9c-5dc7-426a-8986-62abbf99e78f" />
+        <classShapeMoniker Id="316ac6ac-06cd-448f-b88a-6122aecf7f0e" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(10.75 : 3.25); (10.75 : 2.4631982421875)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/officeplanningDataContext/OfficeBuilding/OfficeBuilding_Floor" />
+      <nodes>
+        <classShapeMoniker Id="a0dcda9c-5dc7-426a-8986-62abbf99e78f" />
+        <classShapeMoniker Id="db12b96f-f51b-480f-9626-e22500bb4047" />
+      </nodes>
+    </associationConnector>
+  </nestedChildShapes>
+</ordesignerObjectsDiagram>

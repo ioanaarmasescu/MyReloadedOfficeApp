@@ -1,0 +1,60 @@
+﻿@model MyReloadedOfficeApp.Models.UsersClustersModel
+
+@{
+    ViewBag.Title = "CreateUserRolesAssignment";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>CreateUserRolesAssignment</h2>
+
+@using (Html.BeginForm()) 
+{
+    @Html.AntiForgeryToken()
+    
+    <div class="form-horizontal">
+        <h4>UsersClustersModel</h4>
+        <hr />
+        @Html.ValidationSummary(true, "", new { @class = "text-danger" })
+        <div class="form-group">
+            @Html.LabelFor(model => model.Name, htmlAttributes: new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                @using (var db = new MyReloadedOfficeApp.Models.ApplicationDbContext())
+                {
+
+                    @Html.DropDownList("UserName", new SelectList(db.Users.Select(u => u.UserName), "UserName"))
+                }
+                </div>
+        </div>
+
+        <div class="form-group">
+            @Html.LabelFor(model => model.IdDepartment, htmlAttributes: new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                @Html.DropDownList("Department", new SelectList(new MyReloadedOfficeApp.Models.Repository.DepartmentRepository().GetAllDepartments().Select(u => u.Name)))
+            </div>
+        </div>
+
+        <div class="form-group">
+            @Html.LabelFor(model => model.IdUserType, htmlAttributes: new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                @Html.DropDownList("UserType", new SelectList(new MyReloadedOfficeApp.Models.Repository.RawUserTypesRepository().GetAllRawUserTypes().Select(u => u.Name)))
+            </div>
+        </div>
+
+        @*<div class="form-group">
+            @Html.LabelFor(model => model.Discriminator, htmlAttributes: new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                @Html.ValidationMessageFor(model => model.Discriminator, "", new { @class = "text-danger" })
+            </div>
+        </div>*@
+
+        <div class="form-group">
+            <div class="col-md-offset-2 col-md-10">
+                <input type="submit" value="Create" class="btn btn-default" />
+            </div>
+        </div>
+    </div>
+}
+
+<div>
+    @Html.ActionLink("Back to List", "Index")
+</div>

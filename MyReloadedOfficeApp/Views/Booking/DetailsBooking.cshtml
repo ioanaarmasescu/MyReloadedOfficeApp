@@ -1,0 +1,75 @@
+﻿@model MyReloadedOfficeApp.Models.BookingsModel
+
+@{
+    ViewBag.Title = "DetailsBooking";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+    <h2>DetailsBooking</h2>
+
+<div>
+    <h4>BookingsModel</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.IdBooking)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.IdBooking)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.BookingValidFrom)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.BookingValidFrom)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.BookingValidTo)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.BookingValidTo)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.BookingTimeStamp)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.BookingTimeStamp)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.BookedSeats)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.BookedSeats)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.IdFloor)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.IdFloor)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.IdBuilding)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.IdBuilding)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new {  id = Model.IdBooking }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>
