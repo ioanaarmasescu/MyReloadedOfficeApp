@@ -151,7 +151,7 @@ namespace MyReloadedOfficeApp.Controllers
             if (userRoleRepository.GetRoleByUserName(userId) != null)
             {
                 BookingsModel bookingModel = bookingRepository.GetBookingById(id);
-            return View("DetailsFloors", bookingModel);
+            return View("DetailsBooking", bookingModel);
             }
             else
                 return RedirectToAction("Contact", "Home");
@@ -355,11 +355,11 @@ namespace MyReloadedOfficeApp.Controllers
                     if (ViewBag.Message != "No floor space has been allocated for your department. Please contact your admin.")
 
                     {
-                    BookingsModel bookingModel = new BookingsModel();
+                    BookingsModel bookingModel = bookingRepository.GetBookingById(id);
                     bookingModel.IdFloor = Guid.Parse(Request.Form["Floor"]);
                     bookingModel.IdBuilding = floorRepository.GetFloorById(Guid.Parse(Request.Form["Floor"])).IdBuilding;
                     bookingModel.BookingTimeStamp = DateTime.Now;
-                    bookingModel.BookingValidTo = DateTime.Today;
+                    bookingModel.BookingValidTo = bookingModel.BookingValidFrom;
                     UpdateModel(bookingModel);
 
                         if (bookingRepository.IsDuplicateBooking(bookingModel) == false)
